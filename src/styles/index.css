@@ -19,7 +19,9 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-pale-blue: hsl(221, 100%, 96%);
   --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-light-lavender-shadow:hsla(241, 100%, 89%, 0.2);
   --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
 
   /* Font Weights */
   --fw-normal: 500;
@@ -48,6 +50,7 @@ div#root {
 
 html {
   font-size: 18px;
+  background-color: var(--clr-white);
 }
 /*
   Typographic tweaks!
@@ -58,6 +61,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
 }
 /*
   5. Improve media defaults
