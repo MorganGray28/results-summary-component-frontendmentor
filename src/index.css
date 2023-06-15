@@ -1,3 +1,31 @@
+/* css variables */
+
+/* ### Primary */
+:root {
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orange-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+  /* background */
+  --clr-light-slate-blue: hsl(252, 100%, 67%);
+  --clr-light-royal-blue: hsl(241, 81%, 54%);
+  /* circle */
+  --clr-violet-blue: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Font Weights */
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-boldest: 800;
+}
 
 /* css reset */
 /*
@@ -17,6 +45,10 @@ body,
 div#root {
   height: 100%;
 }
+
+html {
+  font-size: 18px;
+}
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -25,6 +57,7 @@ div#root {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 /*
   5. Improve media defaults
