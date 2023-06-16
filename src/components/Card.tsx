@@ -1,6 +1,5 @@
 import '../styles/Card.css';
 import data from '../../data.json';
-import { useState } from 'react';
 
 type DataType = {
 	category: string;
@@ -10,7 +9,7 @@ type DataType = {
 };
 
 function Card() {
-	const [scores, setScores] = useState<DataType[]>(data);
+	const scores: DataType[] = data;
 
 	function calculateAverage() {
 		let sum = 0;
