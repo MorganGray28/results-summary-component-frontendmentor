@@ -6,6 +6,7 @@ type DataType = {
 	category: string;
 	score: number;
 	icon: string;
+	color: string;
 };
 
 function Card() {
@@ -23,7 +24,7 @@ function Card() {
 	return (
 		<div className='Card'>
 			<CardLeft averageScore={averageScore} />
-			<CardRight />
+			<CardRight scores={scores} />
 		</div>
 	);
 }
@@ -42,10 +43,45 @@ function CardLeft(props: { averageScore: number }) {
 	);
 }
 
-function CardRight() {
+function CardRight(props: { scores: DataType[] }) {
 	return (
 		<div className='CardRight'>
 			<h3>Summary</h3>
+			<ScoreList scores={props.scores} />
+		</div>
+	);
+}
+
+function ScoreList({ scores }: { scores: DataType[] }) {
+	return (
+		<div className='ScoreList'>
+			{scores.map((score) => {
+				return (
+					<ScoreListItem
+						category={score.category}
+						score={score.score}
+						icon={score.icon}
+						color={score.color}
+					/>
+				);
+			})}
+			<button>Continue</button>
+		</div>
+	);
+}
+
+function ScoreListItem({ category, score, icon, color }: DataType) {
+	console.log(color);
+	return (
+		<div className={'ScoreListItem ' + color}>
+			<div className='flex-item-container'>
+				<img src={icon} alt={`${category} icon`} />
+				<p className='category'>{category}</p>
+			</div>
+
+			<p className='score'>
+				{score} <span>/ 100</span>
+			</p>
 		</div>
 	);
 }

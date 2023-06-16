@@ -3,9 +3,13 @@
 /* ### Primary */
 :root {
   --clr-light-red: hsl(0, 100%, 67%);
+  --clr-light-red-background: hsla(0, 100%, 67%, .05);
   --clr-orange-yellow: hsl(39, 100%, 56%);
+  --clr-orange-yellow-background: hsla(39, 100%, 56%, .05);
   --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-green-teal-background: hsla(166, 100%, 37%, .05);
   --clr-cobalt-blue: hsl(234, 85%, 45%);
+  --clr-cobalt-blue-background: hsla(234, 85%, 45%, .05);
 
   /* ## Gradients */
   /* background */
@@ -21,6 +25,7 @@
   --clr-light-lavender: hsl(241, 100%, 89%);
   --clr-light-lavender-shadow:hsla(241, 100%, 89%, 0.2);
   --clr-dark-gray-blue: hsl(224, 30%, 27%);
+  --clr-light-gray-blue: hsla(224, 30%, 27%, 0.5);
 
 
   /* Font Weights */
@@ -61,7 +66,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Hanken Grotesk', sans-serif;
-  color: white;
 }
 /*
   5. Improve media defaults
